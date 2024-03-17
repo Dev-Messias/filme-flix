@@ -1,7 +1,7 @@
 function Home(){
     return(
         <>
-            <h1 className="font-extrabold" >Home</h1>
+            <h1 className="font-extrabold" ></h1>
         </>
     )
 }
