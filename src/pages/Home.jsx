@@ -1,7 +1,10 @@
+
+import Hero from "../components/Hero";
+
 function Home(){
     return(
         <>
-            <h1 className="font-extrabold" ></h1>
+            <Hero/>
         </>
     )
 }
