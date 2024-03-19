@@ -57,12 +57,13 @@ function Details() {
 
             <div className='w-full h-full flex flex-col  items-center  w-max-[850px] m-auto py-40' >
 
-                <img className=' '   src={createImageUrl(filme.backdrop_path ?? filme.poster_path, "original")} alt="" />
+                <img className=' '   src={createImageUrl(filme.backdrop_path ?? filme.poster_path, "w500")} alt="" />
                 <h1 className='font-semibold mt-6 text-2xl lg:text-3xl' >{filme.title}</h1>
                 <p className='mt-4 mb-8 md:w-2/5 ' >{filme.overview}</p>
 
-                <div className='' >
+                <div className=' w-full flex flex-row p-2 gap-6 items-center justify-center ' >
                     <button className='bg-slate-200 p-2 text-sm text-black font-semibold mb-10 rounded-xl hover:bg-slate-400 duration-200 cursor-pointer ' onClick={salvarFilme} >Favoritos</button>
+                    <button className='bg-slate-200 p-2 text-sm text-black font-semibold mb-10 rounded-xl hover:bg-slate-400 duration-200 cursor-pointer '  ><a className='p-2' href={`https://youtube.com/results?search_query=${filme.title} Trailer` } target="blank" rel='external'>Trailer</a></button>
                 </div>
 
             </div>

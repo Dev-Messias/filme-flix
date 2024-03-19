@@ -33,7 +33,7 @@ function MovieRow({ title, url }) {
 
                 <h2 className='font-bold md:text-xl p-4 capitalize' >{title}</h2>
                 <div className='relative flex items-center group' >
-                    <MdChevronLeft onClick={() => slide(-500)} className='bg-white rounded-full absolute left-2 opacity-80 text-gray-700 z-10 block md:hidden group-hover:block cursor-pointer ' size={40} />
+                    <MdChevronLeft onClick={() => slide(-500)} className='bg-white rounded-full absolute left-2 opacity-80 text-gray-700 z-10 hidden group-hover:block cursor-pointer ' size={40} />
                     <div id={`slider` + rowId}
                         className='w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide ' >
                         {movies.map((movie) => (
@@ -44,7 +44,7 @@ function MovieRow({ title, url }) {
                             </Link>
                         ))}
                     </div>
-                    <MdChevronRight onClick={() => slide(500)} className='bg-white rounded-full absolute right-2 opacity-80 text-gray-700 z-10 block md:hidden group-hover:block cursor-pointer ' size={40} />
+                    <MdChevronRight onClick={() => slide(500)} className='bg-white rounded-full absolute right-2 opacity-80 text-gray-700 z-10 hidden group-hover:block cursor-pointer ' size={40} />
                 </div>
 
         </>
