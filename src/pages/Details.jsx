@@ -53,11 +53,11 @@ function Details() {
       }}
 
     return (
-        <div className='w-full h-screen px-4 flex flex-col ' >
+        <div className='w-full h-screen px-4 flex flex-col mb-40' >
 
             <div className='w-full h-full flex flex-col  items-center  w-max-[850px] m-auto py-40' >
 
-                <img className='rounded-xl text-8xl' src={createImageUrl(filme.backdrop_path ?? filme.poster_path, "w500")} alt="" />
+                <img className=' '   src={createImageUrl(filme.backdrop_path ?? filme.poster_path, "original")} alt="" />
                 <h1 className='font-semibold mt-6 text-2xl lg:text-3xl' >{filme.title}</h1>
                 <p className='mt-4 mb-8 md:w-2/5 ' >{filme.overview}</p>
 

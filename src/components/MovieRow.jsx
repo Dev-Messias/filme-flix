@@ -37,7 +37,7 @@ function MovieRow({ title, url }) {
                     <div id={`slider` + rowId}
                         className='w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide ' >
                         {movies.map((movie) => (
-                            <Link to= {`/details/${movie.id}`} state={{ some: "teste" }}   >
+                            <Link to= {`/details/${movie.id}`}   >
                                
                               <MovieItem key={movie.id} movie={movie} />
                               

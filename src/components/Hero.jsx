@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import api from '../services/api';
+import { Link } from 'react-router-dom';
 
 
 function Hero() {
@@ -40,8 +41,10 @@ function Hero() {
                     <div className='absolute w-full top-[45%] md:top-[35%]  lg:top-[50%] p-4 md:p-8 ' >
                         <h1 className='w-full text-3xl md:text-6xl font-bold ' >{title}</h1>
                         <div className='mt-8 mb-4' >
-                            <button className='capitalize border rounded-[3px] bg-gray-300 text-black font-semibold py-2 px-5 hover:scale-95 duration-300 ' >Favoritos</button>
-                            <button className='capitalize border rounded-[3px] border-gray-300 font-semibold py-2 px-5 ml-4 hover:scale-95 duration-300 ' >Detalhes</button>
+                            
+                            <Link to={`/details/${movie.id}`} >
+                                <button className='capitalize border rounded-[3px] border-gray-300 font-semibold py-2 px-5 ml-4 hover:scale-95 duration-300 ' >Detalhes</button>
+                            </Link>
                         </div>
                         <p className='text-gray-400 text-sm font-medium ' >{release_date}</p>
                         <p className=' w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] line-clamp-3 md:line-clamp-3' >{overview}</p>

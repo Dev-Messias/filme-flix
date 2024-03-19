@@ -8,7 +8,7 @@ function Navbar(){
             </Link>
 
             <div>
-                <Link to="/favoritos" >
+                <Link to="/favorites" >
                     <button className='capitalize pr-4' >Favoritos</button>
                 </Link>
             </div>

@@ -14,7 +14,7 @@ function MovieItem({movie}){
 
             <img 
                 className='w-full h-40 block object-cover object-top '
-                src={createImageUrl(backdrop_path ?? poster_path, "w500")} 
+                src={createImageUrl(backdrop_path ?? poster_path, "original")} 
                 alt={title} 
             />
 
